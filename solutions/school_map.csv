@@ -1,0 +1,21 @@
+Science Center,Library,237,Yes
+Science Center,Humanities Hall,412,No
+Science Center,Athletic Complex,156,Yes
+Library,Student Union,289,Yes
+Library,Cafeteria,173,Yes
+Humanities Hall,Science Center,345,No
+Humanities Hall,Fine Arts Building,421,Yes
+Student Union,Library,100,No
+Student Union,Administrative Office,194,Yes
+Athletic Complex,Humanities Hall,401,Yes
+Athletic Complex,Dormitory Complex,288,No
+Cafeteria,Student Union,215,Yes
+Cafeteria,Gymnasium,332,Yes
+Fine Arts Building,Athletic Complex,276,No
+Fine Arts Building,Dormitory Complex,189,Yes
+Administrative Office,Cafeteria,243,Yes
+Administrative Office,Gymnasium,407,No
+Dormitory Complex,Fine Arts Building,164,Yes
+Dormitory Complex,Science Center,298,No
+Gymnasium,Administrative Office,381,Yes
+Gymnasium,Library,226,Yes
