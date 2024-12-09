@@ -59,7 +59,7 @@ def readability_check(formatted_text):
 # Example usage:
 
 # Part 1: Read a PDF file
-pdf_path = 'test_pdf'  # Name of PDF file
+pdf_path = 'test_pdf.pdf'  # Name of PDF file
 text = read_pdf(pdf_path)
 
 # Part 2: Format the text with letter formatting
