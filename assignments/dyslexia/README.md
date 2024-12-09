@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project involves analysising and formatting a given text to make it more reading accessible. The objectives include reading a PDF file and converting it into a formattable format, spacing and formatting each letters, and evaluating the readiability of the text.
+This project focuses on analyzing and formatting a given text to improve its readability and accessibility. The goals include extracting text from a PDF file, converting it into a format suitable for editing, adjusting the spacing and formatting of individual letters, and assessing the overall readability of the text.
 
 ## Project Objectives
 
@@ -101,4 +101,4 @@ This work's aim is to better understand how formatting impacts those with dyslex
 3. **Report**: Does your report clearly communicate the results and approach?
 
 ## Sample PDF
-View the link: 
+Click the link: https://docs.google.com/document/d/1EZ5FpSEUsiVuO1MKMXo2cgholXodyRVIKfJIw4ao83I/edit?usp=sharing
