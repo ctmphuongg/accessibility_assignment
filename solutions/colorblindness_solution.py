@@ -13,22 +13,21 @@ def main():
     # Open an image that will be converted into the three different types of colorblindness
     while True:
         try:
-            image_name = input("Enter the name of the image you want to cosnvert (FULL NAME WITH FILE TYPE): ")
+            image_name = input("Enter the name of the image you want to convert (FULL NAME WITH FILE TYPE) " +
+                               "(Be sure to add 'photos/' at the beginnning of the name): ")
             if (not (".jpg" or ".png") in image_name):
                 raise ValueError
-            image = Image.open(image_name).convert("RGB")
+            image = Image.open("photos/"+ image_name).convert("RGB")
             image_names = image_name.split(".")
         except ValueError:
             print("That's not a valid name! Be sure it ends with .jpg or .png.")
             continue
         except FileNotFoundError:
-            print("File not found! Ensure the picture is in the same folder as this file.")
+            print("File not found! Ensure the picture is in the 'photos' folder.")
         else:
             break
 
     sim = simulate.Simulator_AutoSelect()
-    
-    print(image_names)
     image_array = np.array(image)
     simulated_arr = sim.simulate_cvd(image_array, simulate.Deficiency.PROTAN, 0.8)
     simulated_img  = Image.fromarray(simulated_arr)
