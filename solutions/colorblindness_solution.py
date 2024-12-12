@@ -26,16 +26,20 @@ def main():
         else:
             break
 
+    
     sim = simulate.Simulator_AutoSelect()
     image_array = np.array(image)
+    # Simulate protanopia
     simulated_arr = sim.simulate_cvd(image_array, simulate.Deficiency.PROTAN, 0.8)
     simulated_img  = Image.fromarray(simulated_arr)
     simulated_img.save(image_names[0] + "-protanopia." + image_names[1])
     simulated_img.show()
+    # Simulate deuteranopia
     simulated_arr = sim.simulate_cvd(image_array, simulate.Deficiency.DEUTAN, 0.8)
     simulated_img  = Image.fromarray(simulated_arr)
     simulated_img.save(image_names[0] +"-deuteranopia." + image_names[1])
     simulated_img.show()
+    # Simulate tritanopia
     simulated_arr = sim.simulate_cvd(image_array, simulate.Deficiency.TRITAN, 0.8)
     simulated_img  = Image.fromarray(simulated_arr)
     simulated_img.save(image_names[0] + "-tritanopia." + image_names[1])
