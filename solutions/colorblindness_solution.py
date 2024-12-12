@@ -15,7 +15,7 @@ def main():
                                "(Be sure to add 'photos/' at the beginnning of the name): ")
             if (not (".jpg" or ".png") in image_name):
                 raise ValueError
-            image = Image.open("photos/"+ image_name).convert("RGB")
+            image = Image.open(+ image_name).convert("RGB")
             image_names = image_name.split(".")
         except ValueError:
             print("That's not a valid name! Be sure it ends with .jpg or .png.")
