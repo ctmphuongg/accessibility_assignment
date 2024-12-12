@@ -1,5 +1,4 @@
-import daltonlens as dalton
-from daltonlens import simulate, convert
+from daltonlens import simulate
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
