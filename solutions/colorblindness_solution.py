@@ -2,7 +2,6 @@ import daltonlens as dalton
 from daltonlens import simulate, convert
 import numpy as np
 import matplotlib.pyplot as plt
-import tkinter as tk
 from PIL import Image
 
 '''
